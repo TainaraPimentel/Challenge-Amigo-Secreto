@@ -23,3 +23,20 @@ function adicionarAmigo() {
         console.log("OK: Nome digitado inserido a lista e campo de digitação limpo");
     }   
 }
+
+//função lista nome digitado pelo usuário
+function ordenarListaDeAmigo(listaDeAmigos) {
+    let campo = document.getElementById('listaAmigos');
+    campo.innerHTML = "";
+    listaDeAmigos.forEach((nomeLista) => {
+        let lista = document.createElement('li');
+        lista.textContent = nomeLista;
+        campo.appendChild(lista); 
+    });
+}
+
+//função limpa o valor digitado pelo usuário
+function limparCampo(){
+    nome = document.querySelector('input');
+    nome.value = '';
+}
