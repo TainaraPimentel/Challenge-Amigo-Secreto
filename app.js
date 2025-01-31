@@ -43,15 +43,25 @@ function limparCampo(){
 
 //função realiza sorteio aleatório da listaDeAmigos digitada
 function sortearAmigo() {
-    let campo = document.querySelector('h2');
-    campo.innerHTML = "";
 
     console.log("botão sortear foi clicado");
-    let sorteio = Math.random() * (listaDeAmigos.length - 0) + 0;
-    let numeroSorteado = Math.floor(sorteio);
-    console.log(numeroSorteado);
-    console.log(listaDeAmigos[numeroSorteado]);
 
-    let nomeSorteado = document.querySelector('h2');
-    nomeSorteado.innerHTML = ("Nome Sorteado:  " + listaDeAmigos[numeroSorteado]);  
+    if (listaDeAmigos == ""){
+        alert("erro: Por favor, insira um nome.");
+        console.log("Erro: Por favor, insira um nome.");
+    } else {
+        
+        let sorteio = Math.random() * (listaDeAmigos.length - 0) + 0;
+        let numeroSorteado = Math.floor(sorteio);
+        console.log(numeroSorteado);
+        console.log(listaDeAmigos[numeroSorteado]);
+
+        let campo = document.querySelector('ul');
+        campo.innerHTML = "";
+    
+        let nomeSorteado = document.getElementById('resultado');
+        nomeSorteado.innerHTML = ("O amigo secreto sorteado é: " + listaDeAmigos[numeroSorteado]); 
+
+    }   
 }
+
