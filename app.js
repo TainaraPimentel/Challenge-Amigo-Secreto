@@ -40,3 +40,18 @@ function limparCampo(){
     nome = document.querySelector('input');
     nome.value = '';
 }
+
+//função realiza sorteio aleatório da listaDeAmigos digitada
+function sortearAmigo() {
+    let campo = document.querySelector('h2');
+    campo.innerHTML = "";
+
+    console.log("botão sortear foi clicado");
+    let sorteio = Math.random() * (listaDeAmigos.length - 0) + 0;
+    let numeroSorteado = Math.floor(sorteio);
+    console.log(numeroSorteado);
+    console.log(listaDeAmigos[numeroSorteado]);
+
+    let nomeSorteado = document.querySelector('h2');
+    nomeSorteado.innerHTML = ("Nome Sorteado:  " + listaDeAmigos[numeroSorteado]);  
+}
