@@ -16,7 +16,8 @@ Projeto utilizado no curso da Alura, Com foco no desenvolvimento da lógica de p
 ## Funcionalidade
 
 O jogo permite ao usuário realizar o sorteio de forma aleatória de um dos nomes digitados.
-![imagemJogoOnline]()
+
+![imagemJogoOnline](https://github.com/TainaraPimentel/Challenge-Amigo-Secreto/blob/main/assets/Captura%20de%20tela%20de%202025-02-03%2013-28-59.png)
 
 ## Acesso ao projeto
 
